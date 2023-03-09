@@ -1,5 +1,9 @@
 # ¡Bienvenido a un API RESTful con php!
 
+## ¡Si usas esta API dale una estrella!
+
+![enter image description here](https://media.discordapp.net/attachments/1026681338138468427/1083198318471020584/Screenshot_1.png?width=1440&height=304)
+
 Esta API forma parte de una asignación de la clase de Desarrollo de aplicaciones móbiles 2 de la **Universidad Centroamericana** (UCA) y tiene como propósito servir de guia para la creación de APIs. 
 
 # Recursos
