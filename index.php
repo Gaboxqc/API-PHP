@@ -88,6 +88,22 @@ switch(strtoupper($_SERVER['REQUEST_METHOD'])){
         }
         break;
     case 'PUT':
+        require_once 'conexion.php';
+        case 'books':
+            $titulo = $_GET['titulo'];
+            $id_autor = $_GET['id_autor'];
+            $id_genero = $_GET['id_genero'];
+
+
+            $q = "UPDATE books SET titulo= '$titulo', id_autor= '$id_autor', id_genero= '$id_genero' WHERE id=$resourceId";
+            $query = mysqli_query($con, $q);
+
+            if($query == true){
+                echo 'Libro actualizado correctamente';
+            }else{
+                echo 'Error al actualizar';
+            }
+            break;
         break;
     case 'DELETE':
         require_once 'conexion.php';
