@@ -90,5 +90,18 @@ switch(strtoupper($_SERVER['REQUEST_METHOD'])){
     case 'PUT':
         break;
     case 'DELETE':
+        require_once 'conexion.php';
+        switch($resourceType){
+            case 'books':
+                $q = 'DELETE FROM books WHERE id=' . $resourceId;
+                $query = mysqli_query($con, $q);
+
+                if($query == true){
+                    echo 'Libro eliminado correctamente';
+                }else{
+                    echo 'Error al eliminar';
+                }
+                break;
+        }
         break;
 }
